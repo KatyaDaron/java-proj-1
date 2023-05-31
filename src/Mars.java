@@ -23,14 +23,12 @@ public class Mars {
         for (int minute = 0; minute <= minutesLeft; minute++) {
             if(minute % 2 == 0 && minute % 3 == 0) {
                 System.out.println("Keep Center");
+            } else if (minute % 2 == 0) {
+                System.out.println("Right");
+            } else if (minute % 3 == 0) {
+                System.out.println("Left");
             } else {
-                if(minute % 2 == 0) {
-                    System.out.println("Right");
-                } else if(minute % 3 == 0) {
-                    System.out.println("Left");
-                } else {
-                    System.out.println("Calculating");
-                }
+                System.out.println("Calculating");
             }
             Thread.sleep(250);
         }
