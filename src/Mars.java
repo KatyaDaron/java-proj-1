@@ -11,17 +11,19 @@ public class Mars {
         shipPopulation += 5;
 
         String landingLocation = "The Hill";
-        if(landingLocation.equalsIgnoreCase("The Plain")) {
+        if (landingLocation.equalsIgnoreCase("The Plain")) {
             System.out.println("Bbzzz Landing on the Plain");
         } else {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
         landing = landingCheck(10);
+
+        GuessingGame game = new GuessingGame();
     }
 
     public static boolean landingCheck(int minutesLeft) throws InterruptedException {
         for (int minute = 0; minute <= minutesLeft; minute++) {
-            if(minute % 2 == 0 && minute % 3 == 0) {
+            if (minute % 2 == 0 && minute % 3 == 0) {
                 System.out.println("Keep Center");
             } else if (minute % 2 == 0) {
                 System.out.println("Right");
