@@ -88,7 +88,5 @@ public class MarsExpedition {
         System.out.println("Countdown initiated: 3... 2... 1...");
         Thread.sleep(1000);
         System.out.println("Blastoff!");
-
-        input.close();
     }
 }
